@@ -1,0 +1,431 @@
+Hardware and Configuration Errors
+Hardware Failures: These could involve failing network interfaces or critical components like power supplies. Configuration Errors: Incorrect configurations that lead to routing loops, misconfigured access lists, or protocol mismatches.
+%FIB-2-FIBDOWN: Indicates a failure in the Forwarding Information Base, which can cause routing disruptions.
+%SYS-2-MALLOCFAIL: Signals a memory allocation failure, often indicative of resource exhaustion or internal errors.
+%STP-2-LOOPGUARD_BLOCK: Triggered by the Spanning Tree Protocol loop guard detecting a loop, which is a preventive measure to avoid network broadcast storms.
+%PS-4-FAIL: Reflects a power supply failure which can result in the shutdown of network devices if redundant power is not available.
+%HARDWARE-1-FAIL: Hardware failure detected on {interface}. Immediate attention needed.
+%CONFIG-3-ERROR: Configuration error detected on {interface}. Conflict in IP address allocation.
+%ROUTING-BGP-5-ADJCHANGE: neighbor {neighbor_ip} Down - Misconfiguration detected (VRF: default) (AS: {as_number}).
+%PKT_INFRA-FM-2-FAULT_CRITICAL: ALARM_CRITICAL: Failure in power unit detected.
+%PKT_INFRA-LINK-3-UPDOWN: Interface {interface}, changed state to Down due to hardware malfunction.
+%CONFIG-2-INVALID: Invalid configuration attempt on {interface}. VLAN tagging mismatch.
+%CONFIG-3-ERROR: Configuration error detected on {name}. Rollback required."),
+%HARDWARE-1-FAILURE: Critical hardware failure detected in {name}. Immediate replacement needed."),
+%HARDWARE-2-DEGRADING: Hardware component degrading on {name}. Check logs for specific component.")
+%LINK-3-DOWN: Interface {interface} link status is down due to hardware failure.
+%CONFIG-2-MISMATCH: Configuration mismatch detected on {interface}. Potential network instability.
+%POWER-1-FAILURE: Power supply failure detected in {name}. Check redundant supplies.
+
+Security and Performance Issues
+Security Alerts: Concerning authentication failures, excessive login attempts, and unauthorized access attempts.
+Interface Status Changes: Related to physical and logical link status changes, impacting connectivity and data flow.
+BGP Adjustments: Reflecting changes in BGP neighbor relationships which are crucial for routing stability and performance.
+%SECURITY-SSHD-4-INFO_FAILURE: Indicates failed SSH authentication attempts, pointing to potential security threats or misconfigurations.
+%BGP-3-NOTIFICATION: Reflects BGP notification messages for administrative resets, impacting routing stability and network performance.
+%LINK-3-UPDOWN: Indicates an interface going down, possibly due to hardware issues or configuration errors affecting connectivity.
+%STP-2-BLOCK_BPDUGUARD: Signals STP (Spanning Tree Protocol) taking protective action to prevent loops by shutting down a port that received a BPDU (Bridge Protocol Data Unit), crucial for maintaining network stability.
+%SEC-LOGIN-4-LOGIN_FAILED: Login failed [user: {user} source: {ip} method: TTY]
+%SYS-5-CONFIG_I: Configuration failed by {user} on {interface}
+%LINK-3-UPDOWN: Interface {interface} link status is down
+%STP-2-BLOCK_BPDUGUARD: Received BPDU on port {interface}, which is configured with BPDU Guard
+%SECURITY-3-INVALID_ACCESS: Unauthorized access attempt detected from {ip}
+%PERFORMANCE-2-DEGRADED: Network performance degraded significantly on device {name}
+%SECURITY-1-BREACH: Security breach detected! Immediate action required on device {name}
+%ACCESS_CONTROL-3-BLOCKED: Repeated unauthorized access attempts from {ip} on port {port}
+%TRAFFIC-2-OVERLOAD: Traffic overload detected on interface {interface}. Potential performance impact.
+%SYSTEM-1-OVERLOAD: System overload! Performance critically affected on {interface}.
+
+Hardware Malfunctions and Firmware Issues
+Hardware Failures: Relate to physical device malfunctions, such as transceiver problems or unexpected device reboots
+Firmware Errors: Involve issues with the software running on the network devices, such as bugs causing reboots or performance degradation
+%PLATFORM-2-PS_FAIL: Indicates a failure in the power supply unit, which can lead to device shutdowns and service interruptions
+%SYS-2-CRASH: Reports a system crash due to a firmware error, potentially leading to network downtime
+%ENVIRONMENTAL-1-TEMP: Alerts that the device temperature has exceeded safe operating thresholds, potentially leading to hardware damage
+%DIAG-3-HW_FAILURE: Signals severe hardware failure, which may require immediate intervention to prevent network outages
+%SYS-2-MALLOCFAIL: Memory allocation failed - process {process_name}, info {info}
+%PLATFORM-3-ECC_ERROR: Correctable ECC error detected, module {module_name}")
+%SYS-5-RELOAD: Reload requested by {user}, reload Reason: {reason}
+%CIMC-2-FW_FAILURE: Firmware update failure on module {module_id}
+%PLATFORM-1-CRITICAL: Hardware failure or misconfiguration detected on {hardware_component}
+%DIAG-3-ERROR: Diagnostic error detected in {module_name}
+%HARDWARE-3-MODULE_FAILURE: Module failure detected on device {name}
+%FIRMWARE-2-CORRUPTED: Firmware corruption detected on device {name}. Immediate update required
+%SYSTEM-1-FAILURE: Critical hardware failure on device {name}. Device reboot required
+%HARDWARE-3-POWER_ISSUE: Power supply instability detected on {interface}
+%FIRMWARE-2-UPDATE_FAILED: Firmware update failed on {interface}. Rollback initiated
+%SYSTEM-1-CRITICAL_FAILURE: Critical system failure detected on {interface}. Service is down
+
+Security Breaches and Configuration Errors
+Security Breaches: These include unauthorized access and security protocol failures that may lead to data breaches or malicious activities.
+Configuration Errors: These involve incorrect settings or commands that could lead to network instability, exposure to vulnerabilities, or performance issues.
+%FIREWALL-1-INTRUSION_DETECTED: Alerts on detected intrusion attempts, critical for security incident responses.
+%VPN-3-HANDSHAKE_FAILURE: Indicates failures in VPN handshake processes, suggesting potential security or configuration issues.
+%CONFIG-2-INVALID_COMMAND: Signals that an invalid command was entered, potentially causing disruptions if not corrected.
+%BGP-4-CONFIG_ERROR: Warns of configuration errors with BGP neighbors, which could lead to routing issues or network instability.
+%SECURITY-3-LOGIN_FAILED: Login attempt failed for username {user} from {source}
+%AAA-3-CONFIG_ERROR: Configuration error detected in AAA setup
+WARNING", "%SYS-3-CPUHOG: Process exceeded time limit of CPU usage
+%LINK-3-UPDOWN: Interface {interface} went down unexpectedly
+%STP-3-BLOCK_ERR: Spanning tree blocking error on {interface}
+%SYS-3-CONFIG_ERR: Misconfiguration detected by system check
+%SECURITY-3-UNAUTHORIZED_ACCESS: Unauthorized access attempt detected on device {name}
+%CONFIGURATION-3-ERROR: Configuration error detected on device {name}. Could affect routing protocols
+%SECURITY-1-BREACH: Security breach confirmed on device {name}. Immediate action required
+%SECURITY-3-INVALID_ACCESS: Invalid access attempt detected on {interface}
+%CONFIGURATION-2-FAULT: Fault in configuration causing service disruption on {interface}
+%SECURITY-1-INTRUSION_DETECTED: Intrusion detected with potential data compromise on {interface}.
+
+Power and Hardware Failures
+Power Failures: These can result from issues like power outages, surges, or failures in the power supply units, impacting device functionality and network availability.
+Hardware Failures: These encompass failures in critical hardware components such as switches, routers, servers, or storage devices, which can lead to partial or total network outages.
+%POWER-1-FAILURE: Alerts on a critical power supply failure that could shut down the server
+%HARDWARE-3-CRASH: Indicates a severe hardware malfunction or crash that may require immediate replacement or repair
+%HARDWARE-1-FAILURE: Reports a critical failure in the switch’s hardware, potentially affecting multiple network segments
+%POWER-2-UNSTABLE: Warns of fluctuating power levels that could lead to hardware malfunctions or operational instability
+%POWER-2-FAIL: Power supply failure detected on device {name}
+%HARDWARE-1-FAILURE: Critical hardware failure on device {name}. System shutdown imminent
+%SYSTEM-1-REBOOT: System reboot initiated due to hardware failure on device {name}
+%POWER-2-INTERRUPTED: Power supply interrupted on {interface}. Switch operating on backup
+%SWITCH-1-FAILURE: Major switch hardware failure detected on {interface}
+%HARDWARE-1-CRITICAL_ERROR: Critical error in hardware, affecting operational capability on {interface}
+
+Network Latency Issues
+Network Congestion: This occurs when too many packets are present on a network segment, causing delays and packet drops.
+Faulty Routing: Incorrect routing configurations can lead to longer paths for data packets, increasing the time it takes for them to reach their destination.
+Hardware Inefficiencies: Older or malfunctioning hardware can process data packets slower than expected, contributing to increased latency.
+%ROUTER-3-LATENCY_HIGH: Signals higher than normal latency, suggesting issues with routing paths or overload.
+%ROUTER-2-OVERLOADED: Indicates that the router is operating at or above its capacity, which could lead to increased latency.
+%SWITCH-3-DELAYED: Reports delays in processing by the switch, possibly due to hardware issues.
+%SWITCH-2-CONGESTION: Highlights severe congestion, typically causing significant increases in latency and requiring immediate resolution.
+%IP-4-DUPADDR: Duplicate IP address {ip} sent from Ethernet0/0, detected by Cisco ASR 1000
+"BGP-3-NOTIFICATION: Received from neighbor {neighbor_ip} on Cisco Catalyst 9300 (hold time expired)
+%OSPF-4-FLOOD_WAR: OSPF flooding in area 0 on Cisco ISR 4000.")
+%SYS-2-MALLOCFAIL: Memory allocation failure on Cisco Nexus 9000
+%ENVIRONMENTAL-1-TEMP: Critical temperature threshold exceeded on Cisco Catalyst 6500
+%ERRDISABLE-2-PSECURE_VIOLATION: Port security violation on Cisco Meraki MR46
+%LATENCY-3-HIGH_LATENCY: High latency detected on {interface}, exceeding 100ms
+%TRAFFIC-3-DELAYED: Significant traffic delays on {interface} due to congestion
+%ROUTING-1-TIMEOUT: Routing timeout errors increasing on {interface}
+%SWITCHING-3-SLOW: Switching speed reduced, high latency on {interface} detected."),
+%BUFFER-3-OVERFLOW: Buffer overflow, high packet delay and loss on {interface}."),
+%LINK-2-DEGRADATION: Link quality degradation causing increased latency on {interface}
+
+Network Misconfiguration Issues
+Routing Errors: Incorrect routing rules can cause loops or direct traffic inefficiently, impacting network performance.
+Access List Misconfiguration: Errors in configuring network access control lists (ACLs) might lead to unauthorized access or block legitimate traffic.
+Protocol Misconfiguration: Mistakes in protocol configuration (like BGP, OSPF) could disrupt network communication
+%ROUTER-3-CFG_ERROR: Indicates an issue in the router's configuration, which might be affecting its functionality.
+%ROUTER-1-LOOP_DETECTED: Alerts about a serious issue like a routing loop, which is critical and needs immediate correction.
+%SWITCH-3-ACL_MISCONFIG: Points to problems with access list configurations, potentially leading to blocked or dropped legitimate traffic.
+%SWITCH-2-PROTOCOL_ERROR: Signals incorrect protocol setup, which could destabilize the entire network.
+%SYS-2-MALLOCFAIL: Memory allocation of {bytes} bytes failed for {pool}, data abandoned
+%PM-4-ERR_DISABLE: psecure-violation error detected on {interface}, putting {interface} in errdisable state
+%LINEPROTO-5-UPDOWN: Line protocol on Interface {interface} is down due to admin shutdown
+%SPANTREE-2-RECV_PVID_ERR: Received BPDU with inconsistent peer vlan ID {vlan_id} on {interface} VLAN {vlan_id}
+%ERR_DISABLE: interface {interface} error detected: channel-misconfig (STP), putting {interface} in errdisable state
+%PAGP-5-PORTFROMSTP: Port {port} left bridge port {port_id}
+%CONFIG-3-ERROR: Configuration error on {interface} - incorrect settings applied."),
+%SECURITY-4-POLICY_FAILURE: Security policy misconfigured on {interface}, potential vulnerability."),
+%CONFIG-1-CRITICAL: Critical configuration error detected on {interface}
+%VLAN-3-INVALID: Invalid VLAN configuration on {interface}, traffic misrouting."),
+%STP-3-CONFIG_MISMATCH: STP configuration mismatch on {interface}, possible loop."),
+%LINK-2-DOWN: Link status down on {interface}, due to configuration error
+
+Routing Error Issues
+Routing errors can occur due to misconfigured routing tables, improper route advertisements, or conflicts between static and dynamic routing policies. These problems might manifest through various symptoms in network logs.
+%ROUTING-3-INVALID_ROUTE: Alerts to an invalid routing entry that could misdirect traffic or cause network loops.
+%ROUTING-2-ROUTE_FLAP: Indicates instability within the network, where routes are being advertised and withdrawn repeatedly.
+%ROUTING-1-ROUTE_CONFLICT: A critical issue where conflicting routes are present, requiring immediate attention to prevent network outages.
+%SWITCH-2-ROUTE_MISS: Signifies missing routing information which could lead to dropped packets or unreachable destinations.
+%SWITCH-1-ROUTE_LOOP: Alerts to a severe condition where a routing loop could degrade network performance severely or halt traffic.
+%BGP-5-ADJCHANGE: neighbor {neighbor_ip} Down - Interface flap (VRF: default) (AS: {as_number})
+%BGP-3-NOTIFICATION: sent to neighbor {neighbor_ip} {error_code}/{error_subcode} (hold time expired)
+%OSPF-3-ERRRCV: Rcv pkt from {neighbor_ip}, interface {interface}: Mismatched MTU
+%EIGRP-3-KVALUES_MISMATCH: K values mismatch with neighbor {neighbor_ip} on interface {interface}
+%PKT_INFRA-FM-2-FAULT_CRITICAL: ALARM_CRITICAL: Loss of signal detected on {interface}
+%IP_RTG-3-ROUTING_TABLE_FAILURE: Routing table failure, cannot add {route_ip}
+%ROUTING-3-ROUTE_INVALID: Invalid routes detected in routing table on {interface}
+%ROUTING-BGP-4-INVALID_ASN: Invalid ASN advertised from neighbor {neighbor_ip}
+%ROUTING-1-FLAPPING: Route flapping detected affecting performance for {interface}
+%STP-2-ROOT_CHANGE: Root bridge change detected on {interface}, potential misconfiguration
+%ROUTING-3-NO_ROUTE_TO_HOST: No route to host for traffic on {interface}, check routing tables
+%LINK-1-PROTOCOL_FAILURE: Routing protocol failure on {interface}, immediate attention required
+
+Packet Loss Issues
+Packet loss is particularly critical in networks handling real-time communications such as VoIP or streaming media, where it can lead to noticeable degradation of service quality.
+%NETWORK-3-PACKET_DROP: Signifies a high rate of packet drops which could be due to network congestion or device faults.
+%NETWORK-1-PACKET_LOSS: A critical alert pointing to substantial packet loss that may indicate serious hardware issues.
+%SWITCH-2-PACKET_DISCARDS: Notes increased rates of packet discards, potentially due to capacity issues or misconfigurations.
+%SWITCH-1-NETWORK_CONGESTION: Highlights severe congestion within the network leading to significant packet loss, which can drastically affect network performance.
+%BGP-3-NOTIFICATION: Received shutdown notification from neighbor {neighbor_ip} in VRF {vrf}
+%OSPF-3-ERRRCV: Packet received on {interface} from {neighbor_ip} with mismatched area ID
+%IP-4-PACKET_LOSS: Severe packet loss detected on interface {interface}, affecting traffic to {neighbor_ip}
+%LINK-3-DOWN: Interface {interface} link status changed to down.
+%STP-2-BLOCK_BPDUGUARD: BPDU guard blocking {interface}, detected BPDU on port.
+%ENVIRONMENTAL-1-TEMP: Critical temperature threshold exceeded on {module_id}
+%IP-3-PACKET_DROP: High volume of packets dropped on {interface} due to buffer overflow
+%ROUTING-BGP-4-LOSSY_LINK: Significant packet loss detected on link to neighbor {neighbor_ip}
+%SYSTEM-1-FRAGMENTATION: System experiencing fragmentation issues leading to packet drops on {interface}
+%LINK-2-BANDWIDTH_OVERFLOW: Interface {interface} experiencing bandwidth overflow, leading to dropped packets
+%QOS-3-DROPPOLICY_EXCEEDED: Quality of service policy exceeded on {interface}, resulting in dropped packets
+%STP-1-LOOP_DETECTED: Network loop detected causing packet storms and subsequent loss on {interface}
+
+Link Flapping Issues
+Link flapping is disruptive because it can trigger constant recalculations in network routing tables and flood networks with link-state changes, thereby affecting overall network performance and reliability.
+%LINK-3-FLAPPING: Signals frequent up and down status changes, suggesting potential issues that need investigation.
+%LINK-1-ERROR: A critical error indicating that the interface is potentially failing and may need replacement or repair.
+%LINK-3-FLAPPING: Points to instability in switch ports, which could be due to physical connection issues or equipment faults.
+%LINK-1-DOWN: A severe issue calling for immediate attention due to frequent and disruptive connectivity losses.
+%LINK-3-UPDOWN: Interface {interface} flapping between up and down
+%PM-4-ERR_DISABLE: psecure-violation error detected on {interface}, putting {interface} in err-disable state
+%LINK-3-UPDOWN: Interface {interface} down due to link flap error
+%LINK-3-UPDOWN: Interface {interface} flapping between up and down
+%STP-2-BLOCK_BPDUGUARD: Received BPDU on port {interface} with BPDU Guard enabled
+%LINEPROTO-5-UPDOWN: Line protocol on Interface {interface}, changed state to down due to link flap
+%LINK-3-FLAPPING: Interface {interface} link status flapping detected
+%LINK-3-UPDOWN: Interface {interface} changed state to down, then up repeatedly
+%SYSTEM-1-STABILITY: System stability threatened by frequent link state changes on {interface}
+%IP-4-FREQUENT_STATE_CHANGE: Frequent state changes detected on {interface}
+%ROUTING-OSPF-4-NEIGHBOR_CHANGE: OSPF neighbor state change too frequent on {interface}
+%CPU_MONITOR-2-HIGH_USAGE: High CPU usage due to excessive link state handling on {interface}
+
+Network Loop Issues
+Network loops are particularly problematic because they can overwhelm network resources, leading to degraded service or complete network outages. They often manifest through excessive broadcasting and multiple frame copies appearing at different parts of the network.
+%STP-LOOP-DETECTED: Warns of a loop detected by STP, indicating a need for immediate network configuration review and correction.
+%BROADCAST-STORM: Indicates a critical condition where a broadcast storm is occurring, likely due to a network loop, necessitating urgent troubleshooting to prevent a network collapse.
+%STP-2-BLOCK_BPDUGUARD: Received BPDU on port {interface} which is an Edge port
+%SYS-2-MALLOCFAIL: Memory allocation of {bytes} bytes failed for {reason}, pool {pool}, alignment {alignment}
+%PM-4-ERR_DISABLE: loopback error detected on {interface}, putting {interface} in err-disable state
+%STP-2-LOOPGUARD_BLOCK: Loop guard blocking port {interface} on VLAN {vlan_id}
+%SYS-2-MALLOCFAIL: Memory allocation of {bytes} bytes failed for {reason}, pool {pool}, alignment {alignment}
+%PM-4-ERR_DISABLE: loopback error detected on {interface}, putting {interface} in err-disable state")
+%STP-2-LOOP_DETECTED: Spanning tree loop detected on {interface}
+%LINK-3-DOWN: Interface {interface} down due to loop
+%SYSTEM-1-CRASH: System instability due to network loop on {interface}
+%IP-3-COLLISION: Excessive collisions detected on {interface} due to loop
+%ROUTING-BGP-5-ADJCHANGE: Routing adjacency changes frequently on {interface} due to network instability
+%CPU_MONITOR-2-HIGH_USAGE: High CPU usage due to excessive processing of looped packets.
+
+Broadcast Storm Issues
+A broadcast storm occurs when there is an abundance of broadcast frames entering the network, causing network devices to expend all their resources on processing these frames, which can lead to network slowdowns or even crashes. This issue is critical in networks with dense configurations and can manifest as severe network lag and unresponsiveness.
+%NETWORK-BROADCAST-STORM: Warns that the level of broadcast traffic is unusually high, which may lead to a storm if not checked.
+%NETWORK-BROADCAST-CRASH: Indicates a critical alert where the switch has crashed due to the severity of the broadcast storm, signaling an urgent need for network intervention and recovery procedures.
+%IP-4-DUPADDR: Duplicate IP address {ip} detected on {interface}, sourced by {mac_address}
+%SYS-2-MALLOCFAIL: Memory allocation of {size} bytes failed for {pool}, data abandoned
+%STORM_CONTROL-2-BROADCAST_SUPPRESS: Broadcast threshold exceeded on {interface}
+%MACFLAP_NOTIF: MAC flap detected on {interface}, moving between port {port1} and port {port2}
+%SW_MATM-4-MACFLAP_NOTIF: Host {mac_address} in vlan {vlan_id} is flapping between port {port1} and port {port2}
+%STP-2-BLOCK_BPDUGUARD: BPDU guard blocking {interface} due to excessive BPDUs
+%STORM_CONTROL-2-SHUTDOWN: Broadcast storm detected on {interface}, interface shut down
+%LINK-3-OVERLOAD: Interface {interface} overloaded with broadcast traffic
+%IP-3-BROADCAST_STORM: Excessive broadcast packets detected on {interface}
+%CPU_MONITOR-2-HIGH_USAGE: CPU usage high due to processing broadcast traffic
+%SYSTEM-1-RESPONSE: System response slow due to high broadcast traffic on {interface}
+
+IP Address Conflict Issues
+IP address conflicts occur when two devices on the same network are assigned or claim the same IP address. This can cause errors in network routing and connectivity issues for the affected devices, often leading to intermittent network access or complete failure of one or both devices to communicate on the network.
+%IP-ERR: Indicates an error where an IP address conflict has been detected. This can help in quickly identifying and resolving the conflict to restore normal operations.
+%IP-CRITICAL: Reports a critical situation where multiple IP conflicts have occurred, potentially requiring more drastic measures such as network reconfiguration or system restarts.
+%IP-3-DUPLICATE: Duplicate IP address {ip} detected on {interface}, conflict with {mac_address}
+%IP-4-CONFIG_RESOLVE_FAILURE: Unable to resolve IP address conflict on {interface}
+%SYS-2-DUPLICATE_IP_SOURCE: Duplicate IP source detected in VRF {vrf_id} on {interface}
+%STP-2-BRIDGE_ASSURANCE_FAIL: Bridge assurance failure on {interface}, potential loop detected
+%IP-3-LOOPBACK_ERR: IP address on {interface} has loopback error, possible misconfiguration
+%IP-3-CONFLICT: IP address conflict detected for {ip} on {name}
+%SYSTEM-1-IP_DUPLICATE: Duplicate IP address {ip} detected, interface disabled
+%DHCP-4-DUPLICATE_ADDRESS: DHCP server detected duplicate IP address {ip}
+%IP-3-CONFLICT: IP address conflict detected for {ip} on {name}
+%SYSTEM-1-IP_DUPLICATE: Duplicate IP address {ip} detected, traffic blocked
+%DHCP-4-DUPLICATE_ADDRESS: DHCP server detected duplicate IP address {ip}
+
+Protocol Mismatch Issues
+Protocol mismatches can lead to failed connections, poor network performance, or incorrect data interpretation between devices. These mismatches are typically seen in settings where new equipment or software updates introduce newer protocols not supported by older network infrastructure.
+%PROTOCOL-MISMATCH: Used to alert on detections of protocol discrepancies which may affect connectivity and network operations. It is typically a precursor to more severe problems if not addressed
+%PROTOCOL-ERROR and %PROTOCOL-FAILURE: Indicate severe protocol-related issues that have resulted in connection failures or operational disruptions, necessitating immediate technical intervention to resolve
+%CDP-4-DUPLEX_MISMATCH: Duplex mismatch discovered on {interface}, not full duplex
+%LINK-3-UPDOWN: Interface {interface} link status is down due to protocol mismatch
+%SYS-5-CONFIG_I: Configured from console by {user}, potential protocol mismatch
+%STP-2-BLOCK_BPDUGUARD: Received BPDU on port {interface}, with BPDU Guard enabled
+%LINK-3-UPDOWN: Interface {interface}, link failure
+%SYS-5-CONFIG_I: Configured from console by {user}, protocol settings mismatch detected
+%PROTOCOL-3-MISMATCH: Protocol version mismatch with neighbor {neighbor_ip} on {interface}
+%OSPF-1-ADJFAIL: Failed to establish OSPF adjacency with neighbor {neighbor_ip} due to protocol mismatch
+%BGP-4-VERSION_ERROR: BGP version mismatch with peer {neighbor_ip}
+%CDP-3-VERSION_MISMATCH: CDP version mismatch on {interface} with device {neighbor_ip}
+%LLDP-3-PROTOCOL_ERROR: Incompatible LLDP version received from {neighbor_ip} on {interface}
+%STP-1-PROTOCOL_MISMATCH: Spanning Tree Protocol mismatch on {interface} leading to potential loops
+
+VLAN Configuration Errors
+VLAN (Virtual Local Area Network) configuration errors can cause significant network segmentation problems, preventing devices on the same physical network from communicating effectively or allowing unauthorized access to sensitive data.
+%VLAN-CONFIG-ERROR: Used to indicate problems in VLAN tagging or settings that result in traffic being incorrectly routed or devices not communicating as expected
+%VLAN-CONFIG-FAILURE: Suggests a critical issue where VLAN configurations are incomplete or incorrect, potentially leading to network segments being isolated
+%VLAN-MISMATCH: Warns of discrepancies in VLAN IDs between what is configured and what is operational, potentially leading to routing issues
+%VLAN-3-INVALID_VLAN_ID: Invalid VLAN ID specified on {interface}
+%STP-3-BPDU_GUARD: BPDU guard violation on {interface}, VLAN {vlan_id} shut down
+%VLAN-2-SECURITY_VIOLATION: Security violation on VLAN {vlan_id}
+%VLAN-3-CONFIG_FAIL: Configuration failed for VLAN {vlan_id} on {interface}
+%LINK-3-UPDOWN: Interface {interface}, changed state to down due to VLAN mismatch
+%STP-2-DISCARDING: Spanning tree discarding packets on {interface}, possible loop detected
+%VLAN-3-CONFIG_FAILURE: Failed to apply VLAN {vlan_id} configuration on {interface}
+%STP-2-BLOCKING: Blocking {interface} on VLAN {vlan_id} due to incorrect configuration
+%VLAN-1-FATAL_ERROR: Fatal error processing VLAN {vlan_id} on {name}
+%VLAN-3-NOT_FOUND: VLAN {vlan_id} not found during configuration on {name}
+%VLAN-2-MISMATCH: VLAN tagging mismatch on {interface} detected
+%SYSTEM-1-VLAN_ERROR: System error due to VLAN configuration failure on {name}
+
+Unauthorized Access
+Unauthorized access refers to attempts by users or devices to access parts of the network for which they do not have permissions. This can lead to potential data breaches, network disruptions, or unauthorized use of network resources
+%SECURITY-ACCESS-VIOLATION and %SECURITY-UNAUTHORIZED-ACCESS: Used to log any unauthorized access attempts, alerting administrators to potential security threats.
+%SECURITY-BREACH and %SECURITY-INTEGRITY-FAIL: Indicate more severe scenarios where there is a possibility that the network's security has been compromised or unauthorized changes have been made to configuration settings
+%SECURITY-SSHD-4-FAILED_LOGIN_ATTEMPT: Failed login attempt for user '{user}' from '{ip}'
+%AUTH-3-INVALID_USER: Unauthorized access attempt by unknown user on {name}
+%SECURITY-1-INTRUSION_DETECTED: Potential security breach detected on {name}
+%LOGIN-4-LOGIN_FAILURE: Failed login attempt on {name} from {ip}
+%SECURITY-3-UNAUTHORIZED_ACCESS: Unauthorized access attempt detected on {name}
+%SYSTEM-1-SECURITY_BREACH: Security breach, immediate action required on {name}
+
+Traffic Overload
+Traffic overload occurs when the volume of data being handled by network devices exceeds their capacity. This can result in slow network speeds, dropped packets, and potentially service outages if not managed effectively
+%NETWORK-TRAFFIC-OVERLOAD: Alerts to high traffic volumes that are approaching the capacity limits of the network devices.
+%NETWORK-TRAFFIC-CRITICAL and %NETWORK-TRAFFIC-FATAL: Indicate situations where the traffic volume has exceeded the capacity, risking severe performance degradation or even network outages
+%SYS-2-MALLOCFAIL: Memory allocation failed when attempting operation
+%BGP-3-NOTIFICATION: Received notification from {neighbor_ip}: out of resources
+%IP-4-PACKET_TOO_BIG: Packet needs fragmentation but DF set
+%PM-4-ERR_DISABLE: link-flap error detected on {interface}, putting in err-disable state
+%STORM_CONTROL-3-FILTERED: Broadcast storm detected on {interface}, traffic filtered
+%PLATFORM-2-PFE_HALP: Heavy traffic caused forwarding processor on {interface} to fail
+%TRAFFIC-3-HIGH_USAGE: High traffic usage detected, nearing capacity on {name}
+%BANDWIDTH-2-OVERLOADED: Bandwidth overload, packet loss imminent on {name}
+%SYSTEM-1-CRASH_RISK: System at risk of crash due to excessive traffic on {name}
+%THROUGHPUT-3-HIGH: Unusually high data throughput on {name}
+%PORT-2-OVERLOADED: Port {port} overloaded, significant packet delays on {name}
+%NETWORK-1-DOWN: Network failure due to overload on {name}
+
+Security Misconfiguration
+Security misconfigurations can result from a variety of oversights, such as insecure default settings, incomplete or ad-hoc configurations, open cloud storage, misconfigured HTTP headers, and verbose error messages containing sensitive information. These can provide attackers with unauthorized access or knowledge that can compromise the entire system
+%SECURITY-CONFIG-WARNING and %SECURITY-CONFIG-ALERT: Alert to potential security misconfigurations that may not immediately impact network security but require review.
+%SECURITY-CONFIG-ERROR and %SECURITY-CONFIG-CRITICAL: Indicate severe misconfigurations that require immediate intervention to prevent potential security breaches
+%SECURITY-2-PKT_DROP: Security violation detected, packet dropped from {ip}
+%SYS-2-CONFIG_ERR: Configuration failed on {interface}, syntax error.
+SECURITY-3-LOGIN_FAILURE: Login attempt failed for user {user} from {ip}
+%ERRDISABLE-2-PORT_STATE: Port {port} disabled due to security violation
+%SYS-3-CFG_INVALID: Invalid configuration attempt detected on {interface}
+%AAA-3-PROC_ERROR: Authentication process error, check system logs
+%CONFIG-3-UNSECURED_SETTING: Unsecured configurations detected on {name}
+%AUTH-3-FAIL_SECURE: Failure to enforce security policies on {name}
+%SECURITY-1-VULNERABILITY_EXPOSED: Critical vulnerability exposed due to misconfiguration on {name}
+%ACCESS-3-UNRESTRICTED_ACCESS: Unrestricted access detected on {name}
+%ENCRYPTION-3-FAILURE: Encryption failure, potential data exposure on {name}
+%NETWORK-1-SECURITY_BREACH: Security breach detected, immediate action required on {name}
+
+DDoS Attack
+DDoS attacks typically target the network layer or application layer of a system. These attacks aim to exhaust resources such as bandwidth, CPU, or memory, thereby causing significant service degradation or complete service outages. Effective logging can help in the early detection and mitigation of such attacks
+%DDOS-WARNING and %DDOS-ALERT: Serve as early warnings of potential DDoS activity based on traffic spikes or patterns that deviate from the norm
+%DDOS-CRITICAL: Indicate a high likelihood or confirmation of a DDoS attack, suggesting immediate action to mitigate the attack and restore normal service
+%SECURITY-4-DDOS_ATTACK_DETECTED: Potential DDoS attack detected - excessive traffic from {source_ip}
+%BGP-3-ADJCHANGE_FAILURE: BGP peering with neighbor {neighbor_ip} lost - possible DDoS
+%LINK-2-RECEIVE_FAILURE: Excessive collisions detected on interface {interface} - potential DDoS activity
+%CPU-2-OVERLOAD: CPU utilization threshold exceeded, potential DDoS impact
+%DDOS-3-DETECTION: Potential DDoS traffic pattern detected from {source_ip} to {destination_ip}
+%SECURITY-2-DDOS_MITIGATION: DDoS mitigation initiated for traffic from {source_ip} affecting {interface}
+%DDOS-1-RESPONSE: Automated response triggered to mitigate potential DDoS attack
+%DDOS-3-ANOMALY: Anomalous traffic volumes detected exceeding thresholds on {interface}
+%DDOS-1-MITIGATION_FAILURE: DDoS mitigation attempt failed, manual intervention required
+%DDOS-4-TRACEBACK: Error in tracing the source of high traffic volume
+%SECURITY-3-UNUSUAL_TRAFFIC: Unusually high traffic volume detected on {name}
+%DDOS-1-DETECTION: DDoS attack suspected on {name}, activating mitigation protocols
+%SYSTEM-1-OVERLOAD: System overload due to suspected DDoS attack on {name}
+%ACCESS-3-FAILED_ATTEMPTS: Multiple failed login attempts detected on {name}
+%TRAFFIC-3-ABNORMAL: Abnormal traffic patterns detected on {name}
+%NETWORK-1-DOWN: Network down, possible DDoS attack on {name}
+
+Hardware Failure
+Hardware failures can lead to partial or complete network outages, performance degradation, and loss of redundancy. Effective detection and logging of hardware failure events are critical for initiating rapid repair or replacement procedures to minimize downtime
+%HARDWARE-ERROR and %HARDWARE-ALERT: Indicate early detection of potential hardware issues that could escalate if not addressed.
+%HARDWARE-CRITICAL: Used when a severe hardware failure has occurred, potentially requiring immediate intervention to prevent network outages or further damage
+%ENVMON-1-SHUTDOWN: Environmental Monitor detected power supply failure
+%PLATFORM-3-EJECTOR_STATUS: Card in slot {slot} is malfunctioning
+%SYS-1-CPURISINGTHRESHOLD: Rising threshold reached, CPU utilisation is {cpu_usage}%
+%POWER-3-FAIL: Power supply {psu_number} failed
+%DIAG-2-HWFAILURE: Module {module_id} hardware failure detected
+%PLATFORM-2-MOD_DETECT: Detected FRU removal on {module_type} in slot {slot}
+%PLATFORM_ENV-1-FRU_PS_ACCESS: Power supply failure detected
+SYS-2-MALLOCFAIL: Memory allocation failure
+%SYS-6-BOOTTIME: Router restarted after firmware upgrade failure
+%ENVMON-1-TEMP_ALARM: Chassis temperature exceeds threshold
+%ERRDISABLE-2-PSECURE_VIOLATION: Security violation caused port shutdown
+%DIAG-3-FAIL: The diagnostic result for {module} in slot {slot_number} reported a failure
+%MEMORY-3-ERROR: Memory error detected on {name}
+%SYSTEM-1-CRASH: System crash on {name}, possible hardware failure
+%PROCESSOR-1-FAULT: Processor failure on {name}, immediate replacement needed
+%POWER-3-FAILURE: Power supply failure on {name}
+%LINK-1-DOWN: Critical link failure on {name}, potential hardware issue
+%FAN-1-FAILURE: Fan malfunction on {name}, overheating risk
+
+Physical Damage
+Physical damage to network components can cause disruptions, degraded service, or complete outages depending on the extent of the damage. Logging these events promptly is crucial for initiating repairs and documenting incidents for future preventive measures
+%ENVIRONMENT-ALERT: Signals potential environmental threats or minor physical impacts to the equipment that could escalate if not checked.
+%ENVIRONMENT-CRITICAL: Indicates severe physical damage that has likely impacted the functionality of the device, necessitating immediate action to mitigate further damage and begin recovery processes
+%HARDWARE-2-FAILURE: Critical hardware failure detected on {name}
+%ENVIRONMENT-3-TEMP_HIGH: High temperature warning for {name}, potential hardware risk
+%POWER-1-OUTAGE: Power supply failure on {name}, urgent intervention required
+%HARDWARE-2-FAILURE: Critical hardware failure detected on {name}
+%ENVIRONMENT-3-TEMP_HIGH: High temperature warning for {name}, potential hardware risk
+%POWER-1-OUTAGE: Power supply failure on {name}, urgent intervention required
+
+Firmware Issues
+Firmware problems can lead to devices behaving unpredictably, failing to start, or experiencing performance degradation. Accurate logging is essential for diagnosing these issues, guiding troubleshooting efforts, and ensuring that devices can be quickly restored to normal operation.
+%FIRMWARE-WARN: Used to notify less severe firmware issues that might not immediately impact device operation but could escalate if not addressed.
+%FIRMWARE-ERROR: Indicates serious problems like failed updates which might require immediate intervention to restore functionality.
+%FIRMWARE-CRITICAL: Signals severe issues such as firmware corruption or incompatibilities that compromise device functionality, possibly requiring extensive remedial actions.
+%SYS-2-MALLOCFAIL: Memory allocation of {bytes} bytes failed from {pool}, alignment {align}
+%PLATFORM-3-ELEMENT_CRITICAL: Hardware element reported failure: {element}
+%SYS-5-RELOAD: Reload requested by {user}. Reload Reason: Firmware upgrade
+%ENVIRONMENTAL-1-DTEMPSENSOR: Digital temperature sensor reading out of range: {sensor}
+%ERR-3-ERROR: Error condition detected: {condition}
+%PLATFORM-4-EQUIPMENT_FAILURE: Detected failure in equipment
+%FIRMWARE-3-UPDATE_FAIL : Firmware update failed on {name} at IP {ip}
+%FIRMWARE-1-INVALID_IMAGE : Invalid firmware image detected on {name}. Rollback initiated
+%SYSTEM-2-REBOOT_FAILURE : Unexpected reboot failure on {name} after firmware update attempt
+%FIRMWARE-3-UPDATE_FAIL : Firmware update failed on {name} at IP {ip}
+%FIRMWARE-1-INVALID_IMAGE : Invalid firmware image detected on {name}. Rollback initiated
+%SYSTEM-2-REBOOT_FAILURE : Unexpected reboot failure on {name} after firmware update attempt
+
+Overutilization of Resources
+Resource overutilization can cause network devices to slow down, fail to respond, or even crash, impacting network reliability and performance. Proper logging is critical for monitoring resource usage and initiating corrective actions when thresholds are exceeded
+%RESOURCE-WARNING: Indicates approaching critical levels of resource usage that may soon affect device performance and network service quality.
+%RESOURCE-ERROR: Represents severe resource constraints that are likely causing operational issues and may lead to service interruptions.
+%RESOURCE-CRITICAL: Used for extreme cases where resource overutilization is causing significant disruptions or is at risk of causing network failures.
+%MEMORY-3-LOW: Memory utilization exceeded 85%, potential performance impact
+%CPU-2-OVERLOAD: CPU utilization consistently above 90%, system at risk of instability
+%SYS-2-CPU_OVERLOAD: All processes suspended due to CPU overload
+%LINK-3-UPDOWN_FLAPPING: Interface GigabitEthernet1/0/1 flapping due to high traffic volumes
+%STP-2-BLOCK_BPDUGUARD: BPDU guard violation on Interface GigabitEthernet1/0/1, port disabled
+%SYS-2-MALLOCFAIL: Memory allocation failure, system performance degraded
+%CPU_MONITOR-4-UTILIZATION_HIGH: CPU utilization threshold exceeded: {utilization}% usage
+%MEMORY_MONITOR-3-MEMORY_LOW: Memory usage critical: only {available_memory}M free
+%RESOURCE_LIMIT-3-RESOURCE_LOW: System resource critically low on {resource}
+%TRAFFIC-4-HIGH_TRAFFIC: High traffic volume detected: {flow_rate}Mbps exceeds configured threshold
+%INTERFACE_ERRORS-2-INTERFACE_OVERLOAD: Interface {interface} overload detected, dropping packets
+%CPU_MONITOR-3-USAGE_HIGH: CPU utilization high on {name}, current usage exceeding 85%
+%MEMORY_MONITOR-1-USAGE_CRITICAL: Memory utilization critical on {name}, current usage exceeding 95%
+%SYSTEM-2-OVERLOADED: System performance degraded on {name} due to resource overutilization
+%CPU_MONITOR-3-USAGE_HIGH: CPU utilization high on {name}, current usage exceeding 85%
+%MEMORY_MONITOR-1-USAGE_CRITICAL: Memory utilization critical on {name}, current usage exceeding 95%
+%SYSTEM-2-OVERLOADED: System performance degraded on {name} due to resource overutilization
+
+Underutilization of Resources
+Underutilization might not cause immediate outages or errors, but it is important for optimizing network cost-efficiency and planning for capacity. Effective logging could help in identifying opportunities for resource consolidation or re-allocation to improve overall network efficiency
+%RESOURCE-UNDERUSE: Points to a significantly low usage level of CPU, memory, or bandwidth, suggesting that the equipment might be scaled down or reallocated to better suit actual needs.
+%CPU_MONITOR-6-NOT_UTILIZED: CPU utilization for 5 seconds: {utilization}; no processes exceed 10%"),
+%SYS-6-CLOCKUPDATE: System clock has been updated from console
+%MEMORY-3-LOW: Low memory condition detected, free memory: {free_memory} bytes
+%RESOURCE_POLICY-4-LOW_WATER_MARK: Memory usage low water mark hit, usage: {usage}
+%STP-2-LOOPGUARDBLOCK: Loop guard blocking port '{port}' on '{interface}' due to unutilized port
+%ENVIRONMENTAL-1-ALARM: Low temperature alarm detected for device '{device}'
+%RESOURCE-UNDERUSE: Router {name} CPU utilization consistently below 20%; review potential overcapacity
+%RESOURCE-UNDERUSE: Router {name} excessive memory availability might indicate overprovisioning
+%RESOURCE-UNDERUSE: Switch {name} bandwidth utilization consistently low, consider downscaling capacity
+
+
